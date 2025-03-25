@@ -10,4 +10,4 @@ tqdm
 uvicorn
 fastapi
 realesrgan
-streamlit
+
