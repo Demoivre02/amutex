@@ -1,0 +1,57 @@
+# FLOL Image Enhancement
+
+This script enhances images using a pre-trained FLOL model. It loads an input image, applies enhancements, and saves the output.
+
+## Installation
+
+### Prerequisites
+Ensure you have Python (3.8 or later) installed, along with `pip` to manage dependencies.
+
+### Install Dependencies
+Run the following command to install the required dependencies:
+
+```bash
+pip install torch torchvision pillow numpy
+```
+
+## Running the Script
+
+### Steps
+1. **Prepare Input Image:**
+   - Place the image you want to enhance inside the `images/` directory.
+   - Modify `input_image_path` in the script to point to your image file.
+
+2. **Execute the Script:**
+   Run the following command:
+   
+   ```bash
+   python script.py 
+   ```
+   
+   Ensure the script filename is correct when running the command.
+
+3. **Output Image:**
+   - The enhanced image will be saved inside the `FLOL/output/` directory with a prefix `enhanced_`.
+   - The image will also be displayed automatically upon processing.
+
+## File Structure
+```
+.
+├── script.py              # Main script
+├── images/                # Directory for input images
+│   ├── low00772.png       # Sample input image
+├── FLOL/                  # Output directory
+│   ├── output/            # Directory for processed images
+│   ├── weights/           # Directory containing the model weights
+│       ├── flolv2_UHDLL.pt # Pre-trained model file
+└── README.md              # This file
+```
+
+## Notes
+- The script loads a pre-trained FLOL model from `FLOL/weights/flolv2_UHDLL.pt`.
+- It applies deep learning-based image enhancement before saving the output.
+- Ensure that the model file is available before running the script.
+
+## License
+This project is open-source and can be modified as needed.
+

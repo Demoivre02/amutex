@@ -1,0 +1,9 @@
+torch
+torchvision
+torchmetrics
+huggingface_hub
+gradio
+opencv_contrib_python
+opencv_python_headless
+Pillow
+tqdm
